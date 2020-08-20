@@ -1,0 +1,32 @@
+﻿body{
+    background-color: rgb(230, 230, 230);
+}
+
+header{
+    background-color: rgb(70, 70, 250);
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+}
+
+#slogan{
+    color: rgb(230, 230, 65);
+    font-family: 'Lucida Handwriting';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+main{
+    background-color: rgba(70, 70, 250, 0.2);
+}
+
+.headingStyle{
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(70, 70, 250);
+    color: rgb(230, 230, 65);
+}
