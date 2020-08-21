@@ -26,6 +26,11 @@ main{
     text-decoration: underline;
 }
 
+.topicStyle{
+    color: rgb(230, 230, 65);
+    font-family: 'Lucida Handwriting';
+}
+
 footer{
     background-color: rgb(70, 70, 250);
     color: rgb(230, 230, 65);
