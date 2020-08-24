@@ -1,5 +1,5 @@
 ﻿body{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(200, 200, 200);
     margin: 0;
 }
 
@@ -83,6 +83,28 @@ header h1, header p {
     clear: both;
 }
 
+article.galleryItem{
+    margin: 35px;
+    border: 1px solid rgb(230, 230, 65);
+    display: inline-block;
+    width: 235px;
+}
+
+    article.galleryItem:hover{
+        border: 1px solid rgb(70, 70, 250);
+    }
+
+    article.galleryItem img{
+        width: 100%;
+        height: auto;
+    }
+
+#imageGallery{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
 /*#endregion*/
 
 #slogan{
@@ -99,6 +121,14 @@ main{
 }
 
 .headingStyle{
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheadingStyle {
     color: rgb(70, 70, 250);
     font-family: "Trebuchet MS";
     text-decoration: underline;
