@@ -107,6 +107,26 @@ article.galleryItem{
 
 /*#endregion*/
 
+/*#region Team Floats*/
+
+#teamLeftColumn{
+    width: 75%;
+    float: left;
+    border-right: 1px dashed rgb(230, 230, 65);
+    box-sizing: border-box; /*Changes the way width and height are figured. This means the width of 75% includes the content, padding, and border*/
+}
+
+#teamRightColumn{
+    width: 25%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+/*#endregion*/
+
 #slogan{
     color: rgb(230, 230, 65);
     font-family: 'Lucida Handwriting';

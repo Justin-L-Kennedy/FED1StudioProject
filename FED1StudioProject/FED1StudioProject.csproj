@@ -74,7 +74,6 @@
     <Content Include="images\about_us.jpg" />
     <Content Include="images\choose_us_01.jpg" />
     <Content Include="images\choose_us_02.jpg" />
-    <Content Include="images\logo.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
