@@ -1,5 +1,25 @@
-﻿body{
-    background-color: rgb(200, 200, 200);
+﻿html{
+    /*background-color: rgb(200, 200, 200);*/
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+html::after{
+    content: "";
+    background: url(../images/background.jpg);
+    opacity: .2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position:absolute;
+    z-index: -1;
+}
+
+body{
     margin: 0;
 }
 
@@ -12,7 +32,7 @@ header{
 
 /*#region NavBar*/
 
-nav a{
+nav a {
     color: rgb(230, 230, 65);
     font-family: 'Trebuchet MS';
     font-weight: bold;
@@ -20,12 +40,21 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{
+    color: rgb(30, 30, 230);
+}
+
 nav ul{
-    background-color: rgb(30, 30, 250);
+    background-color: rgb(30, 30, 230);
     margin: 0;
     padding: 0;
     border-top: 2px dotted yellow;
     border-bottom: 2px dotted yellow;
+}
+
+nav li:hover{
+    background-color: rgb(230, 230, 65);
+    border-radius: 50px;
 }
 
 nav ul li{
@@ -33,7 +62,7 @@ nav ul li{
 }
 
 nav ul li a{
-    padding: 1em 2.5em;
+    padding: .65em 2em;
     display: block;
 }
 
@@ -45,38 +74,45 @@ nav ul li a{
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
-    background-position: 3%;
+    background-position: 35px;
     padding: .25em;
 }
 
-header h1, header p {
+header h1, header p{
     margin: 12px 0 8px 270px;
     text-align: left;
 }
 
-#aboutus{
+#aboutUs{
     float: left;
     height: 300px;
     margin-right: 25px;
 }
 
 .aboutWrapper{
-    margin: 0px 75px 75px 75px;
-    padding: 2em 0em;
+    margin: 25px 75px 75px 75px;
+    padding: 2em;
 }
 
-#chooseus1{
+.aboutHeadingStyle{
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+#chooseUs1{
     float: left;
     height: 500px;
     width: 50%;
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
-#chooseus2{
+#chooseUs2{
     float: right;
     height: 500px;
     width: 50%;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 .clear{
@@ -85,19 +121,20 @@ header h1, header p {
 
 article.galleryItem{
     margin: 35px;
-    border: 1px solid rgb(230, 230, 65);
+    border: 2px outset rgb(230, 230, 65);
     display: inline-block;
     width: 235px;
 }
 
-    article.galleryItem:hover{
-        border: 1px solid rgb(70, 70, 250);
-    }
+article.galleryItem:hover{
+    border: 2px inset rgb(70, 70, 250);
+    background-color: rgba(230, 230, 65, .25);
+}
 
-    article.galleryItem img{
-        width: 100%;
-        height: auto;
-    }
+article.galleryItem img{
+    width: 100%;
+    height: auto;
+}
 
 #imageGallery{
     margin: 0 auto;
@@ -148,10 +185,11 @@ main{
     text-align: center;
 }
 
-.subheadingStyle {
+.subheadingStyle{
     color: rgb(70, 70, 250);
     font-family: "Trebuchet MS";
-    text-decoration: underline;
+    font-size: 1.5em;
+    margin: 75px 0 0 25px;
 }
 
 .topicStyle{
@@ -159,17 +197,104 @@ main{
     font-family: 'Lucida Handwriting';
 }
 
+.choose1{
+    float: right;
+}
+
+.choose1 p{
+    margin-right: 25px;
+}
+
+.choose1 a{
+    color: rgb(30, 30, 230);
+    font-family: "Trebuchet MS";
+    font-size: 1.75em;
+}
+
+.choose1 a:hover, .choose2 a:hover{
+    color: rgb(230, 230, 65);
+    text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
+}
+
+.choose2{
+    float: left;
+}
+
+.choose2 p{
+    margin-left: 25px;
+}
+
+.choose2 a{
+    margin-left: 25px;
+    color: rgb(30, 30, 230);
+    font-family: "Trebuchet MS";
+    font-size: 1.75em;
+}
+
+/*#region Contact*/
+
+.contact{
+    margin: 55px auto;
+}
+
+.contact i{
+    font-size: 1.75em;
+    color: rgb(230, 230, 65);
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: rgb(30, 30, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact i:hover{
+    color: rgb(30, 30, 230);
+    background: rgb(230, 230, 65);
+}
+
+.contact td{
+    padding: 15px;
+}
+
+.info{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.shadow{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(30, 30, 230);
+}
+
+.shadow a:hover{
+    color: rgb(230, 230, 65);
+    text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
+}
+
+/*#endregion*/
+
 footer{
     background-color: rgb(70, 70, 250);
     color: rgb(230, 230, 65);
-    padding: 10px;
+    border-top: 2px dotted yellow;
+    padding: 15px;
+    position: relative;
 }
 
-footer a{
-    color: rgb(230, 230, 65);
+.social{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
 }
 
-footer div ul li{
+.social a{
     display: inline-block;
+    color: rgb(230, 230, 65);
     margin-right: 25px;
 }
+
