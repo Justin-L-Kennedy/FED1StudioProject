@@ -119,19 +119,20 @@ header h1, header p{
     clear: both;
 }
 
-article.galleryItem{
+.galleryItem{
     margin: 35px;
     border: 2px outset rgb(230, 230, 65);
+    background-color: rgba(70, 70, 250, .35);
     display: inline-block;
     width: 235px;
 }
 
-article.galleryItem:hover{
+.galleryItem:hover{
     border: 2px inset rgb(70, 70, 250);
     background-color: rgba(230, 230, 65, .25);
 }
 
-article.galleryItem img{
+.galleryItem img{
     width: 100%;
     height: auto;
 }
@@ -195,6 +196,18 @@ main{
 .topicStyle{
     color: rgb(230, 230, 65);
     font-family: 'Lucida Handwriting';
+    font-size: 2em;
+    margin: 5px;
+}
+
+.classStyle p{
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    margin: 7px 0;
+}
+
+.galleryItem:hover .topicStyle{
+    color: rgb(70, 70, 250);
 }
 
 .choose1{
@@ -230,6 +243,76 @@ main{
     font-family: "Trebuchet MS";
     font-size: 1.75em;
 }
+
+/*#region Classes*/
+
+.emptyTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.bakingTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.bbqTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.seafoodTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.asianTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.indianTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+.italianTable{
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
+}
+
+caption{
+    color: rgb(230, 230, 65);
+    font-family: 'Lucida Handwriting';
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(70, 70, 250, .35);
+    border: 2px outset rgb(230, 230, 65);
+    padding: 7px;
+    height: 44px;
+}
+
+.tableStyle th, .tableStyle td{
+    font-family: "Trebuchet MS";
+    background-color: rgba(70, 70, 250, .35);
+    border: 2px outset rgb(230, 230, 65);
+    border-top: none;
+    padding: 10px 15px;
+    height: 18px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/*#endregion*/
 
 /*#region Contact*/
 
