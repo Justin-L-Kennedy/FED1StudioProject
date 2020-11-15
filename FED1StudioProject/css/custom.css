@@ -1,4 +1,4 @@
-﻿html{
+﻿html {
     /*background-color: rgb(200, 200, 200);*/
     width: auto;
     height: auto;
@@ -7,31 +7,58 @@
     margin: 0;
 }
 
-html::after{
-    content: "";
-    background: url(../images/background.jpg);
-    opacity: .2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position:absolute;
-    z-index: -1;
-}
+    html::after {
+        content: "";
+        background: url(../images/background.jpg);
+        opacity: .2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+    }
 
-body{
+body {
     margin: 0;
 }
 
-header{
+main {
+    background-color: rgba(70, 70, 250, 0.4);
+    padding: 1px; /*fixing main gap issue*/
+}
+
+header {
     background-color: rgb(70, 70, 250);
     margin: 0;
     font-family: 'Trebuchet MS';
     font-size: 1.5em;
 }
 
-/*#region NavBar*/
+#slogan {
+    color: rgb(230, 230, 65);
+    font-family: 'Lucida Handwriting';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.75em;
+}
 
+.headingStyle {
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheadingStyle {
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    font-size: 1.5em;
+    margin: 75px 0 0 25px;
+}
+
+/*#region NavBar*/
 nav a {
     color: rgb(230, 230, 65);
     font-family: 'Trebuchet MS';
@@ -40,11 +67,11 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
-    color: rgb(30, 30, 230);
-}
+    nav a:hover {
+        color: rgb(30, 30, 230);
+    }
 
-nav ul{
+nav ul {
     background-color: rgb(30, 30, 230);
     margin: 0;
     padding: 0;
@@ -52,25 +79,64 @@ nav ul{
     border-bottom: 2px dotted yellow;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: rgb(230, 230, 65);
     border-radius: 50px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
 }
 
-nav ul li a{
-    padding: .65em 2em;
-    display: block;
+    nav ul li a {
+        padding: .65em 2em;
+        display: block;
+    }
+/*#endregion*/
+
+/*#region Home*/
+.aboutHeadingStyle {
+    color: rgb(70, 70, 250);
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+.choose1 {
+    float: right;
 }
 
+    .choose1 p {
+        margin-right: 25px;
+    }
+
+    .choose1 a {
+        color: rgb(30, 30, 230);
+        font-family: "Trebuchet MS";
+        font-size: 1.75em;
+    }
+
+        .choose1 a:hover, .choose2 a:hover {
+            color: rgb(230, 230, 65);
+            text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
+        }
+
+.choose2 {
+    float: left;
+}
+
+    .choose2 p {
+        margin-left: 25px;
+    }
+
+    .choose2 a {
+        margin-left: 25px;
+        color: rgb(30, 30, 230);
+        font-family: "Trebuchet MS";
+        font-size: 1.75em;
+    }
 /*#endregion*/
 
 /*#region Images*/
-
-#headerOverlay{
+#headerOverlay {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 200px;
@@ -78,48 +144,41 @@ nav ul li a{
     padding: .25em;
 }
 
-header h1, header p{
+header h1, header p {
     margin: 12px 0 8px 270px;
     text-align: left;
 }
 
-#aboutUs{
+#aboutUs {
     float: left;
     height: 300px;
     margin-right: 25px;
 }
 
-.aboutWrapper{
+.aboutWrapper {
     margin: 25px 75px 75px 75px;
     padding: 2em;
 }
 
-.aboutHeadingStyle{
-    color: rgb(70, 70, 250);
-    font-family: "Trebuchet MS";
-    text-decoration: underline;
-    margin-top: 0;
-}
-
-#chooseUs1{
+#chooseUs1 {
     float: left;
     height: 500px;
     width: 50%;
     margin-right: 35px;
 }
 
-#chooseUs2{
+#chooseUs2 {
     float: right;
     height: 500px;
     width: 50%;
     margin-left: 35px;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-.galleryItem{
+.galleryItem {
     margin: 35px;
     border: 2px outset rgb(230, 230, 65);
     background-color: rgba(70, 70, 250, .35);
@@ -127,241 +186,174 @@ header h1, header p{
     width: 235px;
 }
 
-.galleryItem:hover{
-    border: 2px inset rgb(70, 70, 250);
-    background-color: rgba(230, 230, 65, .25);
-}
+    .galleryItem:hover {
+        border: 2px inset rgb(70, 70, 250);
+        background-color: rgba(230, 230, 65, .25);
+    }
 
-.galleryItem img{
-    width: 100%;
-    height: auto;
-}
+    .galleryItem img {
+        width: 100%;
+        height: auto;
+    }
 
-#imageGallery{
+    .galleryItem a {
+        text-decoration: none;
+    }
+
+#imageGallery {
     margin: 0 auto;
     width: 80%;
     text-align: center;
 }
 
+.teamHeadshot {
+    float: left;
+    height: 150px;
+    margin: 5px 40px 15px 80px;
+    border-radius: 100px;
+    border: 2px ridge rgb(230, 230, 65);
+}
 /*#endregion*/
 
 /*#region Team Floats*/
-
-#teamLeftColumn{
+#teamLeftColumn {
     width: 75%;
     float: left;
-    border-right: 1px dashed rgb(230, 230, 65);
+    border-right: 2px dotted rgb(230, 230, 65);
     box-sizing: border-box; /*Changes the way width and height are figured. This means the width of 75% includes the content, padding, and border*/
 }
 
-#teamRightColumn{
+#teamRightColumn {
     width: 25%;
     float: right;
 }
 
-.clear{
+.clear {
     clear: both;
 }
-
 /*#endregion*/
 
-#slogan{
-    color: rgb(230, 230, 65);
-    font-family: 'Lucida Handwriting';
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.75em;
-}
-
-main{
-    background-color: rgba(70, 70, 250, 0.2);
-    padding: 1px; /*fixing main gap issue*/
-}
-
-.headingStyle{
-    color: rgb(70, 70, 250);
-    font-family: "Trebuchet MS";
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.subheadingStyle{
-    color: rgb(70, 70, 250);
-    font-family: "Trebuchet MS";
-    font-size: 1.5em;
-    margin: 75px 0 0 25px;
-}
-
-.topicStyle{
+/*#region Classes*/
+.topicStyle {
     color: rgb(230, 230, 65);
     font-family: 'Lucida Handwriting';
     font-size: 2em;
     margin: 5px;
 }
 
-.classStyle p{
+.galleryItem:hover .topicStyle {
+    color: rgb(70, 70, 250);
+}
+
+.classStyle p {
     font-family: "Trebuchet MS";
     font-weight: bold;
     margin: 7px 0;
 }
 
-.galleryItem:hover .topicStyle{
-    color: rgb(70, 70, 250);
+.classPadding {
+    padding-bottom: 1em;
+    margin-bottom: 0;
 }
 
-.choose1{
-    float: right;
+.classTable {
+    width: 578px;
+    margin: 10px auto 50px auto;
+    border-collapse: collapse;
 }
 
-.choose1 p{
-    margin-right: 25px;
-}
+    .classTable tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
 
-.choose1 a{
-    color: rgb(30, 30, 230);
-    font-family: "Trebuchet MS";
-    font-size: 1.75em;
-}
+    .classTable thead th {
+        color: rgb(230, 230, 65);
+        font-family: 'Lucida Handwriting';
+        font-size: 2em;
+        font-weight: bold;
+        background-color: rgb(70, 70, 250);
+        border: 2px outset rgb(230, 230, 65);
+        padding: 7px;
+    }
 
-.choose1 a:hover, .choose2 a:hover{
+    .classTable tbody th, .classTable tbody td {
+        font-family: "Trebuchet MS";
+        background-color: rgba(70, 70, 250, .35);
+        border: 2px outset rgb(230, 230, 65);
+        padding: 10px 15px;
+    }
+
+    .classTable tfoot td {
+        color: rgb(230, 230, 65);
+        font-family: "Trebuchet MS";
+        font-size: .9em;
+        text-align: center;
+        background-color: rgb(70, 70, 250);
+        border: 2px outset rgb(230, 230, 65);
+        padding: 5px;
+    }
+/*#endregion*/
+
+/*#region Team*/
+.teamNameTitle {
+    font-family: 'Lucida Handwriting';
     color: rgb(230, 230, 65);
     text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
 }
 
-.choose2{
-    float: left;
+.teamBio {
+    margin: 0 80px 25px 80px;
 }
-
-.choose2 p{
-    margin-left: 25px;
-}
-
-.choose2 a{
-    margin-left: 25px;
-    color: rgb(30, 30, 230);
-    font-family: "Trebuchet MS";
-    font-size: 1.75em;
-}
-
-/*#region Classes*/
-
-.emptyTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.bakingTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.bbqTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.seafoodTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.asianTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.indianTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-.italianTable{
-    width: 578px;
-    margin: 10px auto 50px auto;
-    border-collapse: collapse;
-}
-
-caption{
-    color: rgb(230, 230, 65);
-    font-family: 'Lucida Handwriting';
-    font-size: 2em;
-    font-weight: bold;
-    background-color: rgba(70, 70, 250, .35);
-    border: 2px outset rgb(230, 230, 65);
-    padding: 7px;
-    height: 44px;
-}
-
-.tableStyle th, .tableStyle td{
-    font-family: "Trebuchet MS";
-    background-color: rgba(70, 70, 250, .35);
-    border: 2px outset rgb(230, 230, 65);
-    border-top: none;
-    padding: 10px 15px;
-    height: 18px;
-}
-
-tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
 /*#endregion*/
 
 /*#region Contact*/
-
-.contact{
+.contact {
     margin: 55px auto;
 }
 
-.contact i{
-    font-size: 1.75em;
-    color: rgb(230, 230, 65);
-    float: left;
-    width: 50px;
-    height: 50px;
-    background: rgb(30, 30, 230);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
+    .contact i {
+        font-size: 1.75em;
+        color: rgb(230, 230, 65);
+        float: left;
+        width: 50px;
+        height: 50px;
+        background: rgb(30, 30, 230);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
 
-.contact i:hover{
-    color: rgb(30, 30, 230);
-    background: rgb(230, 230, 65);
-}
+        .contact i:hover {
+            color: rgb(30, 30, 230);
+            background: rgb(230, 230, 65);
+        }
 
-.contact td{
-    padding: 15px;
-}
+    .contact td {
+        padding: 15px;
+    }
 
-.info{
+.info {
     font-size: 26px;
     font-weight: bold;
 }
 
-.shadow{
+.shadow a {
     font-size: 18px;
     font-weight: bold;
     color: rgb(30, 30, 230);
+    text-decoration: none;
 }
 
-.shadow a:hover{
-    color: rgb(230, 230, 65);
-    text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
-}
-
+    .shadow a:hover {
+        color: rgb(230, 230, 65);
+        text-shadow: -1px 1px 2px #1e1ee6, 1px 1px 2px #1e1ee6, 1px -1px 2px #1e1ee6, -1px -1px 2px #1e1ee6;
+    }
 /*#endregion*/
 
-footer{
+/*#region Footer*/
+footer {
     background-color: rgb(70, 70, 250);
     color: rgb(230, 230, 65);
     border-top: 2px dotted yellow;
@@ -369,15 +361,15 @@ footer{
     position: relative;
 }
 
-.social{
+.social {
     position: absolute;
     bottom: 30px;
     right: 0;
 }
 
-.social a{
-    display: inline-block;
-    color: rgb(230, 230, 65);
-    margin-right: 25px;
-}
-
+    .social a {
+        display: inline-block;
+        color: rgb(230, 230, 65);
+        margin-right: 25px;
+    }
+/*#endregion*/

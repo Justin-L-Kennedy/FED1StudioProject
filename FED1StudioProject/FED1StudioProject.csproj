@@ -75,19 +75,31 @@
     <Content Include="images\android-chrome-192x192.png" />
     <Content Include="images\android-chrome-512x512.png" />
     <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\AprilLudgate.jpg" />
+    <Content Include="images\ArtieBucco.jpg" />
     <Content Include="images\asian.jpg" />
     <Content Include="images\background.jpg" />
     <Content Include="images\baking.jpg" />
     <Content Include="images\bbq.jpg" />
+    <Content Include="images\BillLumbergh.jpg" />
+    <Content Include="images\BobPorter.jpg" />
+    <Content Include="images\BobSlydell.jpg" />
     <Content Include="images\choose_us_01.jpg" />
     <Content Include="images\choose_us_02.jpg" />
+    <Content Include="images\DwightSchrute.jpg" />
     <Content Include="images\favicon-16x16.png" />
     <Content Include="images\favicon-32x32.png" />
+    <Content Include="images\FreddyHayes.png" />
     <Content Include="images\header-bg.jpg" />
     <Content Include="images\indian.jpg" />
     <Content Include="images\italian.jpg" />
+    <Content Include="images\JimHalpert.png" />
+    <Content Include="images\KarenFilippelli.png" />
+    <Content Include="images\LeslieKnope.jpg" />
     <Content Include="images\logo.png" />
+    <Content Include="images\RonSwanson.jpg" />
     <Content Include="images\seafood.jpg" />
+    <Content Include="images\StephenChow.jpg" />
     <Content Include="Team.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -97,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Small Business Site Project Brief .pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
